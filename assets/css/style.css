@@ -41,12 +41,10 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
 .header .logo{
     font-size: 2rem;
     font-weight: 600;
 }
-
 header{
     position: fixed;
     width: 100%;
@@ -113,7 +111,7 @@ header.sticky li a:hover{
 }
 
 .intro-img{
-    width: 540px;
+    width: 440px;
     max-width: 100%;
     height: auto;
 
@@ -142,9 +140,9 @@ header.sticky li a:hover{
     justify-self: center;
 }
 .portfo-content .project-card img{
-    justify-self: center;
     width: 640px;
     max-width: 100%;
+    height: auto;
 }
 
 .project-card .project-source{
@@ -162,8 +160,58 @@ header.sticky li a:hover{
 /* ==== Portfolio END ==== */
 
 
+/* ==== About Me ==== */
+.about-container{
+    margin-top: 80px;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-self: center;
+}
 
 
+.about-content .about-text{
+    align-self: center;
+}
+
+
+.social-media{
+    font-size: 2rem;
+}
+
+.social-media a:hover{
+    color: #28abb9;
+}
+
+.about-content h3{
+    margin-top: 2rem;
+}
+
+.skills-list{
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.resume{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #28abb9;
+    border-radius: 5px;
+}
+
+.about-img{
+    justify-self: flex-end;
+}
+.about-img img{
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+}
+/* ==== About Me END ==== */
 
 
 
@@ -219,12 +267,30 @@ header.sticky li a:hover{
         background: url(/assets/img/icon-close.svg) no-repeat center;
         background-size: 25px;
     }
-    /* ==== Header Navigation END ==== */
-
 
     .intro-img{
         display: none;
     }
+    /* ==== Header Navigation END ==== */
+
+    /* ==== About ==== */
+    .about-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .about-img{
+        justify-self: center;
+        width: 450px;
+        grid-row-start: 1;
+    }
+    /* ==== About END ==== */
+   
 }
 
 @media screen and (max-width: 800px){
