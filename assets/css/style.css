@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400&display=swap');
+:root{
+    /* Fonts */
+    --JetBrains: 'JetBrains Mono', monospace;
+    --Jetbrains-200: 200;
+    --Jetbrains-400: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--JetBrains);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    margin-left: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+/* ==== Layout ==== */
+.bd-container{
+    max-width: 1204px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+/* ==== Header Navigation ==== */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: .5s;
+}
+
+header.sticky{
+    background-color: #fff;
+    padding: 20px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .nav-menu li a{
+    color: #111;
+}
+
+.nav-menu{
+    position: relative;
+    display: flex;
+}
+header li a:hover{
+    color: #28abb9;
+}
+header.sticky li a:hover{
+    color: #28abb9;
+}
+/* ==== Header Navigation END ==== */
+
+/* ==== Banner ==== */
+.banner-content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.intro-text h3{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.intro-text h1{
+    font-size: 4rem;
+}
+
+
+.intro-text span{
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.intro-img{
+    width: 540px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* ==== Banner END ==== */
+
+
+
+
+/* ==== Portfolio ==== */
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfo-content{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content .project-card {
+    justify-self: center;
+}
+.portfo-content .project-card img{
+    justify-self: center;
+    width: 640px;
+    max-width: 100%;
+}
+
+.project-card .project-source{
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    justify-content: space-evenly;
+    background-color: #28abb9;
+}
+
+.project-card .project-source .github, .live{
+    font-size: 2rem;
+}
+
+/* ==== Portfolio END ==== */
+
+
+
+
+
+
+
+
+/* ==== Media Query ==== */
+@media screen and (max-width: 900px){
+
+    /* ==== Header Navigation ==== */
+    header{
+        padding: 20px 30px;
+    }
+
+    header .nav-menu{
+     display: none;
+    }
+    
+    header .nav-menu.active{
+        width: 80%;
+        height: 400px;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 10%;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 2px 2px 10px #ccc;
+    }
+
+    header .nav-menu li{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu li a{
+        font-size: 1.6rem;
+    }
+
+    .menu-toggle{
+        position: relative;
+        width: 50px;
+        height: 20px;
+        background: url(/assets/img/icon-hamburger.svg) no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+
+    }
+
+    .menu-toggle.active{
+        background: url(/assets/img/icon-close.svg) no-repeat center;
+        background-size: 25px;
+    }
+    /* ==== Header Navigation END ==== */
+
+
+    .intro-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .portfo-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .portfo-content .project-card img{
+        width: 780px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* ==== Banner ==== */
+    .banner-content{
+        padding: 0 10px;
+    }
+    .intro-text h1{
+        font-size: 2.5rem;
+    }
+
+    .intro-text span{
+        font-size: 1rem;
+    }
+    /* ==== Banner ==== */
+
+}
+
+@media screen and (min-width: 1204px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==== CSS ====-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!--==== Box-Icons ====-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!--========== Header ==========-->
+    <header class="header-container">
+        <div class="header bd-container">
+           <a href="#" class="logo">H.A</a>
+            <div class="menu-toggle" onclick="toggleMenu();"></div>
+            <ul class="nav-menu">
+                <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--========== Header END ==========--> 
+    
+ 
+    <main class="main-container">
+        
+        <!--========== Banner ==========-->
+        <section class="banner-container" id="banner">
+            <div class="banner-content bd-container">
+                <div class="intro-text">
+                    <h3>Hi, my name is</h3>
+                    <h1>Harold Abella</h1>
+                    <span>Front-end Web Developer</span>
+                </div>
+
+                <div class="intro-img">
+                    <img src="/assets/img/app_development_SVG.6f6fb14e.svg" alt="photo">
+                </div>
+            </div>
+        </section>
+
+        <!--========== Banner END ==========-->
+
+           <!--========== Portfolio ==========-->
+        <section class="portfolio-container" id="portfolio">
+            <div class="title bd-container">
+                <h1>My Project</h1>
+            </div>
+            <div class="portfo-content bd-container">
+                
+                <div class="project-card">
+                    <h1>Social Media Dashboard</h1>
+                    <img src="/assets/img/project1.png" alt="project">
+
+                    <div class="project-source">
+                        <a href="#" class="github"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="live"><i class='bx bx-show-alt'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h1>Powerful Insights</h1>
+                    <img src="/assets/img/project2.png" alt="project">
+
+                    <div class="project-source">
+                        <a href="#" class="github"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="live"><i class='bx bx-show-alt'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h1>Powered Technology</h1>
+                    <img src="/assets/img/project3.png" alt="project">
+
+                    <div class="project-source">
+                        <a href="#" class="github"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="live"><i class='bx bx-show-alt'></i></a>
+                    </div>
+                </div>
+
+               
+
+            </div>
+               
+        </section>
+
+    <!--========== Portfolio END ==========-->
+    </main>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== Main JS ==========-->
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
