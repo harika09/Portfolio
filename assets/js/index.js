@@ -28,6 +28,9 @@ const sr = ScrollReveal({
 sr.reveal(`.intro-text, 
         .intro-img, 
         .title,
-        .project-card`,{
+        .project-card,
+        .about-title,
+        .about-text,
+        .about-img`,{
     interval: 200
 })
