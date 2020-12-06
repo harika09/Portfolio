@@ -42,6 +42,11 @@ a{
     align-items: center;
 }
 
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 header{
     position: fixed;
     width: 100%;
