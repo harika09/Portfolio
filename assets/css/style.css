@@ -83,6 +83,15 @@ header.sticky li a:hover{
     padding: 0 20px;
 }
 
+.banner-connect{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.banner-content .github-profile:hover, .linked-profile:hover{
+    color: #28abb9;
+}
+
 .intro-text h3{
     font-size: 1rem;
     margin-left: 5px;
