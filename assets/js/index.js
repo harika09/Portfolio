@@ -24,13 +24,15 @@ const sr = ScrollReveal({
     reset: false
 
 });
-
 sr.reveal(`.intro-text, 
         .intro-img, 
         .title,
         .project-card,
         .about-title,
         .about-text,
-        .about-img`,{
-    interval: 200
+        .about-img,
+        .contact-img,
+        .work-img,
+        .contact-form`,{
+    interval: 100
 })
