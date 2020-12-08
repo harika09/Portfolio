@@ -222,8 +222,9 @@ header.sticky li a:hover{
     height: auto;
 }
 
-
-
+.work-img{
+    margin-bottom: 20px;
+}
 
 .facebook{
     font-size: 4rem;
@@ -233,7 +234,7 @@ header.sticky li a:hover{
 }
 
 .facebook:hover,.twitter:hover, .instagram:hover{
-    color: #FF6363;
+    color:#28abb9;
 }
 
 .twitter{
@@ -269,6 +270,10 @@ header.sticky li a:hover{
     grid-gap: 20px;
 }
 
+.contact-form{
+    margin-right: 1rem;
+}
+
 .contact-img{
     justify-self: center;
 }
@@ -294,11 +299,13 @@ textarea{
 .send-message{
     background-color: #28abb9;
     border: none;
+    outline: none;
     padding: 10px 10px;
     width: 100%;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .send-message:hover{
