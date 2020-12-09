@@ -37,3 +37,23 @@ sr.reveal(`.intro-text,
     interval: 100
 })
 
+/ ===== Send Email ==== //
+function sendMail(params){
+    var templateParams = {
+        from_name: name =  document.getElementById("name").value,
+        to_name: email =  document.getElementById("email").value,
+        message: message =  document.getElementById("message").value,
+
+    }; 
+
+    emailjs.send('gmail','portfoliotemplate', templateParams)
+    .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        document.getElementById("name").value = " ";
+        document.getElementById("email").value = " ";
+        document.getElementById("message").value = " ";
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
+    
+}
