@@ -37,7 +37,7 @@ sr.reveal(`.intro-text,
     interval: 100
 })
 
-/ ===== Send Email ==== //
+// ===== Send Email ==== //
 function sendMail(params){
     var templateParams = {
         from_name: name =  document.getElementById("name").value,
