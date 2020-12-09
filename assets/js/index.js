@@ -49,6 +49,13 @@ function sendMail(params){
     emailjs.send('gmail','portfoliotemplate', templateParams)
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Email sent',
+            text: 'Thank you for contacting me. I will respond to your message within 24 hours. Thankyou!',
+            showConfirmButton: true,
+          })
         document.getElementById("name").value = " ";
         document.getElementById("email").value = " ";
         document.getElementById("message").value = " ";
