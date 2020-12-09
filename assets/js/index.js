@@ -19,11 +19,12 @@ window.addEventListener('scroll', function(){
 // ===== Scroll Reveal Animation ==== //
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '30px',
+    distance: '80px',
     duration: 2000,
     reset: false
 
 });
+
 sr.reveal(`.intro-text, 
         .intro-img, 
         .title,
@@ -37,12 +38,12 @@ sr.reveal(`.intro-text,
     interval: 100
 })
 
-// ===== Send Email ==== //
-function sendMail(params){
-    
-    var name =   document.getElementById("name").value
-    var email =  document.getElementById("email").value
-    var message =  document.getElementById("message").value
+
+// ===== Validating Email ==== //
+function sendMail(){
+    var name =   document.getElementById("name").value;
+    var email =  document.getElementById("email").value;
+    var message =  document.getElementById("message").value;
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     
     var templateParams = {
@@ -52,16 +53,31 @@ function sendMail(params){
 
     }; 
 
-
-    if(email.match(pattern)){
+    if(name == ''){
+        errorMessage();
+        document.getElementById("label-name").style.color = "#FF6363";
+        document.getElementById("name").style.borderColor = "#FF6363";
+    }
+    else{
+        document.getElementById("label-name").style.color = "#111";
+        document.getElementById("name").style.borderColor = "#111";
+    }
+    
+  
+    if (email == ''){
+        errorMessage();
+        document.getElementById("label-email").style.color = "#FF6363";
+        document.getElementById("email").style.borderColor = "#FF6363";
+    } 
+    else if(email.match(pattern)){
         emailjs.send('gmail','portfoliotemplate', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Email sent',
-                text: 'Thank you for contacting me. I will respond to your message within 24 hours. Thankyou!',
+                title: 'Thank you for getting in touch!',
+                text: 'I will respond to your message as soon as possible. Thankyou!',
                 showConfirmButton: true,
               })
             document.getElementById("name").value = " ";
@@ -73,11 +89,35 @@ function sendMail(params){
          });
     }
     else{
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Email is Invalid!',
-          })
+       invalidEmailMessage();
     }
-    
+
+    if(message == ''){
+        errorMessage();
+        document.getElementById("label-message").style.color = "#FF6363";
+        document.getElementById("message").style.borderColor = "#FF6363";
+    }
+    else{
+        document.getElementById("label-message").style.color = "#111";
+        document.getElementById("message").style.borderColor = "#111";
+    }
+
 }
+
+function errorMessage(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Some field is Empty!',
+      })
+}
+
+function invalidEmailMessage(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email is Invalid!',
+      })
+}
+
+
