@@ -37,21 +37,3 @@ sr.reveal(`.intro-text,
     interval: 100
 })
 
-
-function sendMail(){
-    name = document.getElementById("name").value
-    email = document.getElementById("email").value
-    message = document.getElementById("textarea").value
-
-        Email.send({
-            SecureToken: "124ec56d-fd7a-42b7-a63e-b8e70e5ea573",
-            To : 'harold.goldensky@gmail.com',
-            From : email,
-            Name : name,
-            Subject : "Portfolio Inquiry",
-            Body : message,
-            })
-            .then(function (alertmessage){
-                alert("mail sent successfully")
-            });
-}
