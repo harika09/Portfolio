@@ -53,54 +53,31 @@ function sendMail(){
 
     }; 
 
-    if(name == ''){
-        errorMessage();
-        document.getElementById("label-name").style.color = "#FF6363";
-        document.getElementById("name").style.borderColor = "#FF6363";
-    }
-    else{
-        document.getElementById("label-name").style.color = "#111";
-        document.getElementById("name").style.borderColor = "#111";
-    }
-    
-  
-    if (email == ''){
-        errorMessage();
-        document.getElementById("label-email").style.color = "#FF6363";
-        document.getElementById("email").style.borderColor = "#FF6363";
-    } 
-    else if(email.match(pattern)){
-        emailjs.send('gmail','portfoliotemplate', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Thank you for getting in touch!',
-                text: 'I will respond to your message as soon as possible. Thankyou!',
-                showConfirmButton: true,
-              })
-            document.getElementById("name").value = " ";
-            document.getElementById("email").value = " ";
-            document.getElementById("message").value = " ";
-    
-         }, function(error) {
-            console.log('FAILED...', error);
-         });
-    }
-    else{
-       invalidEmailMessage();
-    }
+   if(name == '' || email == '' || message == ''){
+       errorMessage();
+   }
+   else if(email.match(pattern)){
+    emailjs.send('gmail','portfoliotemplate', templateParams)
+    .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Thank you for getting in touch!',
+            text: 'I will respond to your message as soon as possible. Thankyou!',
+            showConfirmButton: true,
+          })
+        document.getElementById("name").value = " ";
+        document.getElementById("email").value = " ";
+        document.getElementById("message").value = " ";
 
-    if(message == ''){
-        errorMessage();
-        document.getElementById("label-message").style.color = "#FF6363";
-        document.getElementById("message").style.borderColor = "#FF6363";
-    }
-    else{
-        document.getElementById("label-message").style.color = "#111";
-        document.getElementById("message").style.borderColor = "#111";
-    }
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
+   }
+   else{
+       invalidEmailMessage();
+   }
 
 }
 
@@ -119,5 +96,7 @@ function invalidEmailMessage(){
         text: 'Email is Invalid!',
       })
 }
+
+
 
 
