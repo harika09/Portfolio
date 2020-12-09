@@ -39,28 +39,45 @@ sr.reveal(`.intro-text,
 
 // ===== Send Email ==== //
 function sendMail(params){
+    
+    var name =   document.getElementById("name").value
+    var email =  document.getElementById("email").value
+    var message =  document.getElementById("message").value
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    
     var templateParams = {
-        from_name: name =  document.getElementById("name").value,
-        to_name: email =  document.getElementById("email").value,
-        message: message =  document.getElementById("message").value,
+        from_name: name,
+        to_name: email,
+        message: message,
 
     }; 
 
-    emailjs.send('gmail','portfoliotemplate', templateParams)
-    .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Email sent',
-            text: 'Thank you for contacting me. I will respond to your message within 24 hours. Thankyou!',
-            showConfirmButton: true,
+
+    if(email.match(pattern)){
+        emailjs.send('gmail','portfoliotemplate', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Email sent',
+                text: 'Thank you for contacting me. I will respond to your message within 24 hours. Thankyou!',
+                showConfirmButton: true,
+              })
+            document.getElementById("name").value = " ";
+            document.getElementById("email").value = " ";
+            document.getElementById("message").value = " ";
+    
+         }, function(error) {
+            console.log('FAILED...', error);
+         });
+    }
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Email is Invalid!',
           })
-        document.getElementById("name").value = " ";
-        document.getElementById("email").value = " ";
-        document.getElementById("message").value = " ";
-     }, function(error) {
-        console.log('FAILED...', error);
-     });
+    }
     
 }
