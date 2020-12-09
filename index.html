@@ -184,22 +184,22 @@
                     <a href="https://www.instagram.com/abellapalaganas" class="instagram"><i class='bx bxl-instagram-alt' ></i></a>
                 </div>
 
-                <div class="contact-form"> 
-                   <form action="mailto:harold.goldensky@gmail.com" enctype="text/plain" method="POST" id="form" class="form">
+              <div class="contact-form"> 
+                   
                         <div class="validate bd-container">
 
                             <label for="#">Name:</label>
                             <input type="text" name="text" id="name" class="contact-input" required>
 
-                            <label for="#">Email</label>
+                            <label for="#">Email:</label>
                             <input type="email" name="email" id="email" class="contact-input" required>
-                            <label for="#">Message</label>
-                            <textarea name="text" id="textarea" cols="0" rows="10" class="contact-input" required></textarea>
+                            <label for="#">Message:</label>
+                            <textarea name="text" id="message" cols="0" rows="10" class="contact-input" required></textarea>
                      
-                                <input type="submit" class="send-message" value="Send Message" >
+                                <input type="submit" class="send-message" value="Send Message" onclick="sendMail()" id="">
                             
                         </div>
-                    </form>
+                
                 </div>
 
             </div>
