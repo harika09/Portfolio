@@ -114,6 +114,16 @@
                         <a href="https://huddle-landing-page-with.netlify.app/" class="live"><i class='bx bx-show-alt'></i></a>
                     </div>
                 </div>
+
+                <div class="project-card clipboard">
+                    <h1>Clipboard Landing Page</h1>
+                    <img src="/assets/img/project5.png" alt="project">
+
+                    <div class="project-source">
+                        <a href="https://github.com/harika09/Clipboard-landing-page-challenge-" class="github"><i class='bx bxl-github'></i></a>
+                        <a href="https://clipboards-landing-page.netlify.app/" class="live"><i class='bx bx-show-alt'></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -193,17 +203,18 @@
                 </div>
 
                 <div class="contact-form"> 
+                
                         <div class="validate bd-container">
                             <label id="label-name">Name:</label>
-                            <input type="text" name="text" id="name" class="contact-input" required>
+                            <input type="text" name="text" id="name" class="contact-input" maxlength="30">
                             <label id="label-email">Email:</label>
-                            <input type="email" name="email" id="email" class="contact-input" required>
+                            <input type="email" name="email" id="email" class="contact-input" maxlength="40">
                             <label id="label-message">Message:</label>
-                            <textarea name="text" id="message" cols="0" rows="10" class="contact-input" required></textarea>
+                            <textarea name="text" id="message" cols="10" rows="10" class="contact-input" maxlength="300"></textarea>
                      
                                 <input type="submit" class="send-message" value="Send Message" onclick="sendMail()" id="">
                         </div>
-                
+              
                 </div>
 
             </div>
