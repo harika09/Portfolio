@@ -151,7 +151,7 @@ header.sticky li a:hover{
 
 .project-card .details-overlay{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -162,7 +162,7 @@ header.sticky li a:hover{
     color: #fff;
     font-size: 1rem;
     padding: 20px;
-    border-radius: 10px ;
+    border-radius: 10px 10px 0 0 ;
 }
 
 .project-card:hover .details-overlay{
@@ -181,7 +181,7 @@ header.sticky li a:hover{
 
 
 .project-card .project-source a{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-right: 30px;
 }
 
