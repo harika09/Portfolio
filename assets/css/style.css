@@ -147,7 +147,6 @@ header.sticky li a:hover{
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
 }
 
 .project-card .details-overlay{
