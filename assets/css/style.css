@@ -161,6 +161,10 @@ header.sticky li a:hover{
     font-size: 2rem;
 }
 
+.clipboard{
+    position: relative;
+    left: 50%;
+}
 /* ==== Portfolio END ==== */
 
 
@@ -411,6 +415,9 @@ textarea{
     .portfo-content .project-card img{
         width: 780px;
     }
+    .clipboard{
+    left: 0;
+}
 }
 
 @media screen and (max-width: 600px){
