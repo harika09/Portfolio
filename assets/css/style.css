@@ -472,7 +472,7 @@ textarea{
     .project-card .details-overlay{ /* Remove this to revert to overlay effect*/
        opacity: 1;
        position: relative;
-       bottom: 5px;
+       bottom: 6px;
        border-radius: 0;
        background-color: #fff;
        color: #111;
