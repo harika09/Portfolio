@@ -149,22 +149,47 @@ header.sticky li a:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.project-card .project-source{
-    display: flex;
-    position: relative;
-    bottom: 5px;
-    justify-content: space-evenly;
-    background-color: #28abb9;
+.project-card .details-overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+   
 }
 
-.project-card .project-source .github, .live{
-    font-size: 2rem;
+.project-card:hover .details-overlay{
+    opacity: 1;
+}
+
+.project-card .details-overlay a{
+    color: #fff;
+}
+
+
+
+.project-card .project-source a:hover{
+    color:  #28abb9;
+}
+
+
+.project-card .project-source a{
+    font-size: 2.5rem;
+    margin-right: 30px;
 }
 
 .clipboard{
     position: relative;
     left: 50%;
 }
+
 /* ==== Portfolio END ==== */
 
 
@@ -213,7 +238,7 @@ header.sticky li a:hover{
 }
 
 .resume:hover{
-    background-color:  #FF6363;
+    background-color:#FF6363;
 }
 
 .about-img{
@@ -234,7 +259,7 @@ header.sticky li a:hover{
     font-size: 4rem;
     position: absolute;
     left: 200px;
-    color:  #FF6363;;
+    color:  #FF6363;
 }
 
 .facebook:hover,.twitter:hover, .instagram:hover{
@@ -280,12 +305,14 @@ header.sticky li a:hover{
 
 .contact-img{
     justify-self: center;
+    position: relative;
 }
 
 .contact-img img{
     width: 440px;
     max-width: 100%;
     height: auto;
+   
 }
 .contact-input{
     width: 100%;
@@ -415,9 +442,12 @@ textarea{
     .portfo-content .project-card img{
         width: 780px;
     }
+
+
     .clipboard{
-    left: 0;
-}
+        position: relative;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 600px){
