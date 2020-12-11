@@ -88,7 +88,6 @@ header.sticky li a:hover{
 .banner-connect{
     font-size: 2rem;
     margin-top: 20px;
-   
 }
 
 .banner-content .github-profile:hover, .linked-profile:hover{
@@ -147,11 +146,12 @@ header.sticky li a:hover{
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+   
 }
 
 .project-card .details-overlay{
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -162,7 +162,7 @@ header.sticky li a:hover{
     color: #fff;
     font-size: 1rem;
     padding: 20px;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
 }
 
 .project-card:hover .details-overlay{
@@ -173,8 +173,11 @@ header.sticky li a:hover{
     color: #fff;
 }
 
-
-
+.project-card .details-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+}
 .project-card .project-source a:hover{
     color:  #28abb9;
 }
@@ -422,6 +425,21 @@ textarea{
     }
     /* ==== About END ==== */
 
+
+    .portfo-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .portfo-content .project-card img{
+        width: 870px;
+    }
+
+    .clipboard{
+        position: relative;
+        left: 0;
+    }
+
     /* ==== Contact Me ==== */
     .contact-content{
         grid-template-columns: 1fr;
@@ -433,22 +451,6 @@ textarea{
    
 }
 
-@media screen and (max-width: 800px){
-    .portfo-content{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .portfo-content .project-card img{
-        width: 780px;
-    }
-
-
-    .clipboard{
-        position: relative;
-        left: 0;
-    }
-}
 
 @media screen and (max-width: 600px){
     
@@ -466,8 +468,33 @@ textarea{
     /* ==== Banner END ==== */
 
     /* ==== Project ==== */
-    .project-card .details-overlay{
-       font-size: .5rem;
+ 
+    .project-card .details-overlay{ /* Remove this to revert to overlay effect*/
+       opacity: 1;
+       position: relative;
+       bottom: 5px;
+       border-radius: 0;
+       background-color: #fff;
+       color: #111;
+       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+       padding: 10px
+    }
+    .project-card .details-overlay p{
+        font-size: .9rem;
+    }
+
+    .project-card .project-source a{
+        font-size: 1.4rem;
+        color: #111;
+    }
+
+    .project-card .details-info{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-card .details-info div{
+        margin-right: 15px;
     }
     /* ==== Project END ==== */
   
