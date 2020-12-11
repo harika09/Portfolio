@@ -140,7 +140,7 @@ header.sticky li a:hover{
 
 .project-content .project-card {
     justify-self: center;
-   
+    
 }
 .portfo-content .project-card img{
     width: 740px;
@@ -157,14 +157,13 @@ header.sticky li a:hover{
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    height: 50%;
+    height: auto;
     transition: .5s ease;
     opacity: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 20px;
-    border-radius: 0 0 10px 10px ;
-   
+    border-radius: 10px ;
 }
 
 .project-card:hover .details-overlay{
@@ -465,7 +464,13 @@ textarea{
     .intro-text span{
         font-size: 1rem;
     }
-    /* ==== Banner ==== */
+    /* ==== Banner END ==== */
+
+    /* ==== Project ==== */
+    .project-card .details-overlay{
+       font-size: .5rem;
+    }
+    /* ==== Project END ==== */
   
 }
 
