@@ -41,9 +41,9 @@ a{
     align-items: center;
 }
 .header .logo img{
-    margin-top: 10px
+    margin-top: 10px;
     width: 100%;
-    max-width: 65px;
+    max-width: 55px;
     height: auto;
 }
 header{
@@ -76,6 +76,8 @@ header li a:hover{
 header.sticky li a:hover{
     color: #28abb9;
 }
+
+
 /* ==== Header Navigation END ==== */
 
 /* ==== Banner ==== */
@@ -87,7 +89,50 @@ header.sticky li a:hover{
     padding: 0 20px;
 }
 
-.banner-connect{
+.intro-text h3{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.intro-text h1{
+    font-size: 4rem;   
+}
+
+
+
+.intro-text span{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+/* .contact-me{
+    margin-top: 30px;
+}
+.contact-me a{
+    background-color:  #28abb9;
+    padding: 10px 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px #4e8d7c;
+}
+
+.contact-me a:hover{
+    background-color:#FF6363;
+    box-shadow: 0 5px#b24545;
+} */
+
+
+.intro-img img{
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+ .banner-connect{
     font-size: 2rem;
     margin-top: 20px;
 }
@@ -110,27 +155,6 @@ header.sticky li a:hover{
     transform: translate(0, -8);
 }
 
-.intro-text h3{
-    font-size: 1rem;
-    margin-left: 5px;
-}
-
-.intro-text h1{
-    font-size: 4rem;
-}
-
-
-.intro-text span{
-    font-size: 1.5rem;
-    margin-left: 5px;
-}
-
-.intro-img img{
-    width: 440px;
-    max-width: 100%;
-    height: auto;
-
-}
 
 /* ==== Banner END ==== */
 
@@ -271,7 +295,7 @@ header.sticky li a:hover{
 
 .resume:hover{
     background-color:#FF6363;
-    box-shadow: 0 5px #FF6363;
+    box-shadow: 0 5px#b24545;
 }
 
 .resume:hover i{
@@ -390,12 +414,46 @@ textarea{
 
 .send-message:hover{
     background-color: #FF6363;
-    box-shadow: 0 5px #FF6363;
+    box-shadow: 0 5px#b24545;
 }
 
 
 /* ==== Contact Me END ==== */
 
+
+.footer-container{
+    margin-top: 80px;
+    background-color:  #28abb9;
+    padding: 30px 40px
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content .logo img{
+    width: 100px;
+}
+
+
+.footer-content .footer-menu .nav-menu a{
+    color: #fff;
+}
+
+.footer-content .footer-menu .nav-menu a:hover{
+    color:#4e8d7c;
+}
+
+.footer-content .footer-connect i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer-content .footer-connect i:hover{
+    color: #4e8d7c;
+}
 
 
 
@@ -473,7 +531,7 @@ textarea{
     }
     /* ==== About END ==== */
 
-
+    /* ==== Porfolio ==== */
     .portfo-content{
         display: grid;
         grid-template-columns: 1fr;
@@ -487,6 +545,7 @@ textarea{
         position: relative;
         left: 0;
     }
+     /* ==== Porfolio END ==== */
 
     /* ==== Contact Me ==== */
     .contact-content{
@@ -496,7 +555,37 @@ textarea{
     .contact-img{
         grid-row-start: 1;
     }
-   
+    /* ==== Contact Me END ==== */
+
+    /* ==== Footer ==== */
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content .logo{
+        justify-self: center;
+    }
+    .footer-content .footer-menu .nav-menu{ 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content .footer-menu .nav-menu li{
+        margin-bottom: 30px;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .footer-content .footer-connect{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer-content .footer-connect i{
+        font-size: 2.5rem;
+    }
+    /* ==== Footer END ==== */
 }
 
 
@@ -551,6 +640,22 @@ textarea{
         margin-right: 15px;
     }
     /* ==== Project END ==== */
+
+      /* ==== Footer ==== */
+
+    .footer-content .footer-menu .nav-menu a{
+        font-size: 1rem;
+    }
+
+    .footer-content .footer-connect{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer-content .footer-connect i{
+        font-size: 1.5rem;
+    }
+    /* ==== Footer END ==== */
   
 }
 
