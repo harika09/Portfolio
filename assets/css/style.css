@@ -89,12 +89,23 @@ header.sticky li a:hover{
     font-size: 2rem;
     margin-top: 20px;
 }
-
-.banner-content .github-profile:hover, .linked-profile:hover{
-    color: #28abb9;
+ .github-profile{
+    position: absolute;
+    transition: all ease-in-out 150ms;
 }
 
+.linked-profile{
+    position: absolute;
+    transition: all ease-in-out 150ms;
+    left: 50px;
+}
 
+.banner-connect .github-profile:hover, .linked-profile:hover{
+    color: #28abb9;
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
 
 .intro-text h3{
     font-size: 1rem;
@@ -238,10 +249,30 @@ header.sticky li a:hover{
     background-color: #28abb9;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 5px #4e8d7c;
+   
 }
+
+.resume a{
+    color: #fff;
+}
+
+.resume i{
+    opacity: 0;
+    color: #ffff;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+
 
 .resume:hover{
     background-color:#FF6363;
+    box-shadow: 0 5px #FF6363;
+}
+
+.resume:hover i{
+    opacity: 1;
 }
 
 .about-img{
@@ -258,15 +289,18 @@ header.sticky li a:hover{
     margin-bottom: 20px;
 }
 
+
+/* ==== About Me END ==== */
+
+
+
+/* ==== Contact Me ==== */
 .facebook{
     font-size: 4rem;
     position: absolute;
     left: 200px;
     color:  #FF6363;
-}
-
-.facebook:hover,.twitter:hover, .instagram:hover{
-    color:#28abb9;
+    transition: all ease-in-out 150ms;
 }
 
 .twitter{
@@ -275,6 +309,7 @@ header.sticky li a:hover{
     left: 360px;
     top: 28px;
     color:  #FF6363;;
+    transition: all ease-in-out 150ms;
 }
 
 .instagram{
@@ -282,13 +317,18 @@ header.sticky li a:hover{
     position: absolute;
     right: 80px;
     top: 162px;
-    color: #FF6363;;
+    color: #FF6363;
+    transition: all ease-in-out 150ms;
 }
-/* ==== About Me END ==== */
 
 
+.facebook:hover,.twitter:hover, .instagram:hover{
+    color:#28abb9;
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
 
-/* ==== Contact Me ==== */
 .contact-container{
     margin-top: 80px;
     margin-bottom: 80px;
@@ -341,11 +381,16 @@ textarea{
     font-size: 1rem;
     cursor: pointer;
     -webkit-appearance: none;
+    color: #fff;
+    box-shadow: 0 5px #4e8d7c;
 }
 
 .send-message:hover{
     background-color: #FF6363;
+    box-shadow: 0 5px #FF6363;
 }
+
+
 /* ==== Contact Me END ==== */
 
 
