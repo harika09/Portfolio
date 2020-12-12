@@ -41,6 +41,7 @@ a{
     align-items: center;
 }
 .header .logo img{
+    margin-top: 10px
     width: 100%;
     max-width: 65px;
     height: auto;
