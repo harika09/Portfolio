@@ -39,10 +39,6 @@ sr.reveal(`.intro-text,
 })
 
 
-$('a').on('touchend', function() {
-    $(this).click();
-});
-
 // ===== Validating Email ==== //
 function sendMail(){
     var name =   document.getElementById("name").value;
