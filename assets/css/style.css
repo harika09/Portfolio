@@ -226,10 +226,10 @@ header.sticky li a:hover{
     margin-right: 30px;
 }
 
-.clipboard{
+/* .clipboard{
     position: relative;
     left: 50%;
-}
+} */
 
 /* ==== Portfolio END ==== */
 
@@ -541,10 +541,10 @@ textarea{
         width: 870px;
     }
 
-    .clipboard{
+    /* .clipboard{
         position: relative;
         left: 0;
-    }
+    } */
      /* ==== Porfolio END ==== */
 
     /* ==== Contact Me ==== */
