@@ -213,7 +213,7 @@ header.sticky li a:hover{
 
 .project-button {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
