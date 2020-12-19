@@ -216,6 +216,7 @@ header.sticky li a:hover{
     grid-gap:30px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    align-items: center;
 }
 
 .project-button a{
