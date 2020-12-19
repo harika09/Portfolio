@@ -98,8 +98,6 @@ header.sticky li a:hover{
     font-size: 4rem;   
 }
 
-
-
 .intro-text span{
     font-size: 1.5rem;
     margin-left: 5px;
@@ -117,6 +115,7 @@ header.sticky li a:hover{
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 5px #4e8d7c;
+
 }
 
 .contact-me a:hover{
@@ -180,14 +179,71 @@ header.sticky li a:hover{
     
 }
 .portfo-content .project-card img{
-    width: 740px;
+    width: 540px;
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
    
 }
 
+.details-overlay h1{
+    margin-bottom: 10px;
+}
+
+.details-overlay p{
+    margin-bottom: 10px;
+}
+
 .project-card .details-overlay{
+    position: relative;
+    bottom: 4px;
+    background-color: #fff;
+    color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    color: #111;
+    font-size: 1rem;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    max-width: 540px;
+    bottom: 6px;
+}
+
+.project-button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-button a{
+    display: block;
+    padding: 5px;
+    width: 60%;
+    background-color: #28abb9;
+    box-shadow: 0 5px #4e8d7c;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.project-button a:hover{
+    background-color:#FF6363;
+    box-shadow: 0 5px#b24545;
+}
+
+
+.project-button a i{
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+
+
+/* .project-card .details-overlay{
     position: absolute;
     bottom: 4px;
     background: rgb(0, 0, 0);
@@ -196,27 +252,27 @@ header.sticky li a:hover{
     width: 100%;
     height: auto;
     transition: .5s ease;
-    opacity: 0;
+    opacity: 1;
     color: #fff;
     font-size: 1rem;
     padding: 20px;
     border-radius: 10px 10px 0 0;
-}
+} */
 
-.project-card:hover .details-overlay{
+/* .project-card:hover .details-overlay{
     opacity: 1;
 }
 
 .project-card .details-overlay a{
     color: #fff;
-}
+} */
 
-.project-card .details-info{
+/* .project-card .details-info{
     display: flex;
     flex-direction: column;
     margin: 5px 0 5px 0;
-}
-.project-card .project-source a:hover{
+} */
+/* .project-card .project-source a:hover{
     color:  #28abb9;
 }
 
@@ -224,9 +280,12 @@ header.sticky li a:hover{
 .project-card .project-source a{
     font-size: 2rem;
     margin-right: 30px;
-}
+} */
 
-/* .clipboard{
+
+
+
+/* .clipboard{ // adding project to center
     position: relative;
     left: 50%;
 } */
@@ -266,7 +325,12 @@ header.sticky li a:hover{
 
 .skills-list{
     margin: 20px 0 20px 0;
-   
+    
+}
+
+.skills-list i{
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 .resume{
@@ -277,7 +341,6 @@ header.sticky li a:hover{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 5px #4e8d7c;
-   
 }
 
 .resume a{
@@ -290,8 +353,6 @@ header.sticky li a:hover{
     font-size: 1.2rem;
     margin-top: 5px;
 }
-
-
 
 .resume:hover{
     background-color:#FF6363;
@@ -330,8 +391,8 @@ header.sticky li a:hover{
     transition: all ease-in-out 150ms;
 }
 
-.twitter{
-    font-size: 4rem;
+.email{
+    font-size: 3.5rem;
     position: absolute;
     left: 360px;
     top: 28px;
@@ -349,7 +410,7 @@ header.sticky li a:hover{
 }
 
 
-.facebook:hover,.twitter:hover, .instagram:hover{
+.facebook:hover,.email:hover, .instagram:hover{
     color:#28abb9;
     margin-top: -10px;
     text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
@@ -482,7 +543,7 @@ textarea{
         justify-content: center;
         align-items: center;
         background-color: #fff;
-        box-shadow: 2px 2px 10px #ccc;
+        box-shadow: 2px 2px 5px #ccc;
     }
 
     header .nav-menu li{
@@ -529,6 +590,15 @@ textarea{
         justify-self: center;
         grid-row-start: 1;
     }
+
+    .connect-with-me .resume{
+        width: 50%;
+    }
+
+    .connect-with-me{
+        display: flex;
+        flex-direction: row;
+    }
     /* ==== About END ==== */
 
     /* ==== Porfolio ==== */
@@ -538,7 +608,14 @@ textarea{
     }
 
     .portfo-content .project-card img{
-        width: 870px;
+        width: 540px;
+        display: block;
+        margin: auto;
+    }
+
+    .project-card {
+        max-width: 640px;
+        margin: auto;
     }
 
     /* .clipboard{
@@ -613,7 +690,6 @@ textarea{
     /* ==== Project ==== */
  
     .project-card .details-overlay{ /* Remove this to revert to overlay effect*/
-       opacity: 1;
        position: relative;
        bottom: 6px;
        border-radius: 0;
@@ -622,6 +698,10 @@ textarea{
        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
        padding: 10px
     }
+
+    .project-card .details-overlay h1{
+        font-size: 1.2rem;
+    }
     .project-card .details-overlay p{
         font-size: .9rem;
     }
@@ -629,16 +709,24 @@ textarea{
     .project-card .project-source a{
         font-size: 1.4rem;
         color: #111;
+    } 
+
+    .project-button a{
+        font-size: .7rem;
     }
 
-    .project-card .details-info{
+    .project-button a i{
+        font-size: .8rem;
+    }
+
+    /* .project-card .details-info{
         display: flex;
         flex-direction: row;
     }
 
     .project-card .details-info div{
-        margin-right: 15px;
-    }
+        margin-right: 1px;
+    } */
     /* ==== Project END ==== */
 
       /* ==== Footer ==== */
@@ -667,7 +755,7 @@ textarea{
         
      }
  
-     .twitter{
+     .email{
          font-size: 3.5rem;
          left: 180px;
          top: 50px;
