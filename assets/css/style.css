@@ -221,7 +221,7 @@ header.sticky li a:hover{
 
 .project-button a{
     display: block;
-    padding-top: 5px;
+    padding: 5px;
     width: 100%;
     background-color: #28abb9;
     box-shadow: 0 5px #4e8d7c;
