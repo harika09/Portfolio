@@ -212,9 +212,10 @@ header.sticky li a:hover{
 }
 
 .project-button {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .project-button a{
