@@ -205,7 +205,6 @@ header.sticky li a:hover{
     color: #111;
     font-size: 1rem;
     padding: 20px;
-    cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     max-width: 540px;
     bottom: 6px;
@@ -229,6 +228,7 @@ header.sticky li a:hover{
     text-align: center;
     font-size: 1rem;
     color: #fff;
+    cursor: pointer;
 }
 
 .project-button a:hover{
