@@ -148,7 +148,7 @@ header.sticky li a:hover{
 }
 
 .banner-connect .github-profile:hover, .linked-profile:hover{
-    color: #28abb9;
+    font-size: 3rem;
     margin-top: -10px;
     text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
     transform: translate(0, -8);
@@ -242,56 +242,6 @@ header.sticky li a:hover{
     font-size: 1rem;
     margin-top: 5px;
 }
-
-
-
-/* .project-card .details-overlay{
-    position: absolute;
-    bottom: 4px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    opacity: 1;
-    color: #fff;
-    font-size: 1rem;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-} */
-
-/* .project-card:hover .details-overlay{
-    opacity: 1;
-}
-
-.project-card .details-overlay a{
-    color: #fff;
-} */
-
-/* .project-card .details-info{
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0 5px 0;
-} */
-/* .project-card .project-source a:hover{
-    color:  #28abb9;
-}
-
-
-.project-card .project-source a{
-    font-size: 2rem;
-    margin-right: 30px;
-} */
-
-
-
-
-/* .clipboard{ // adding project to center
-    position: relative;
-    left: 50%;
-} */
-
 /* ==== Portfolio END ==== */
 
 
@@ -413,10 +363,10 @@ header.sticky li a:hover{
 
 
 .facebook:hover,.email:hover, .instagram:hover{
-    color:#28abb9;
-    margin-top: -10px;
+    font-size: 5rem;
+    margin-top: -15px;
     text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(0, -8);
+    transform: translate(0, -15);
 }
 
 .contact-container{
@@ -588,10 +538,16 @@ textarea{
         font-size: 1.3rem;
     }
 
+    .work-img{
+        margin: 0 auto 10px auto;
+        
+    }
+
     .about-img{
         justify-self: center;
         grid-row-start: 1;
     }
+
 
     .connect-with-me .resume{
         width: 50%;
@@ -701,6 +657,10 @@ textarea{
        padding: 10px
     }
 
+    .project-card{
+        margin: 0 auto;
+    }
+
     .project-card .details-overlay h1{
         font-size: 1.2rem;
     }
@@ -774,6 +734,10 @@ textarea{
     .bd-container{
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .project-card {
+        margin: auto;
     }
 }
 
