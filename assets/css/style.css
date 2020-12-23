@@ -286,6 +286,30 @@ header.sticky li a:hover{
     margin-right: 10px;
 }
 
+.skills-list .fa-html5 {
+  color: #f37e16;
+}
+
+.skills-list .fa-css3-alt {
+  color: #40abbf;
+}
+
+.skills-list .fa-bootstrap {
+  color: #be4bdb;
+}
+
+.skills-list .fa-js-square {
+  color: #f7df1c;
+}
+
+.skills-list .fa-php {
+  color: #6f80b6;
+}
+
+.skills-list .fa-swift {
+  color: #f69d84;
+}
+
 .resume{
     margin-top: 50px;
     padding: 10px 10px;
