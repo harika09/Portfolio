@@ -7,11 +7,23 @@ function toggleMenu(){
 }
 
 
-// ===== Change Color of navitation bar when triggered ==== //
+// ===== Change Color of navigation bar when triggered ==== //
 window.addEventListener('scroll', function(){
     const header = document.querySelector('header');
     header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("header");
+var btns = header.getElementsByClassName("nav-item");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active-nav");
+  current[0].className = current[0].className.replace(" active-nav", "");
+  this.className += " active-nav";
+  });
+}
 
 
 
