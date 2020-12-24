@@ -66,6 +66,16 @@ header.sticky .nav-menu li a{
     color: #111;
 }
 
+header.sticky .nav-menu li .active-nav {
+  /* Change color when .active-nav addeed to li a */
+  color: #28abb9;
+}
+
+.nav-menu li .active-nav {
+  color: #28abb9;
+}
+
+
 .nav-menu{
     position: relative;
     display: flex;
