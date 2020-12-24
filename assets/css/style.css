@@ -231,7 +231,7 @@ header.sticky li a:hover {
   margin-bottom: 5px;
 }
 
-.language .swiper img {
+.language .swiper .swiper-icon {
   width: 15px;
   height: 15px;
   box-shadow: none;
@@ -577,6 +577,10 @@ textarea {
   .project-card {
     max-width: 640px;
     margin: auto;
+  }
+  
+  .language .swiper .swiper-icon {
+    display: inline;
   }
 
   /* .clipboard{
