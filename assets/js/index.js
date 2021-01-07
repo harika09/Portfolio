@@ -59,7 +59,8 @@ srTop.reveal(`.intro-text,
         .about-title,
         .about-text,
         .contact-img,
-        .contact-form`,{
+        .contact-form,
+       .bxl-instagram-alt,`,{
     interval: 100
 })
 
@@ -75,7 +76,6 @@ const srBottom = ScrollReveal({
 srBottom.reveal(`.about-img,
     .work-img,
     .intro-img,
-    .bxl-instagram-alt,
     .about-work-text`,{
     interval: 100
 })
