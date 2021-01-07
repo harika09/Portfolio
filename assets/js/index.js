@@ -1,10 +1,23 @@
 // ==== Menu Toggle ==== //
-function toggleMenu(){
+/*function toggleMenu(){
     const menutoggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-menu');
     menutoggle.classList.toggle('active');
     nav.classList.toggle('active');
-}
+}*/
+
+const menutoggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav-menu');
+
+nav.addEventListener("click", function(){
+    nav.classList.toggle("active");
+    menutoggle.classList.remove("active")
+});
+
+menutoggle.addEventListener("click", function(){
+    menutoggle.classList.toggle("active")
+    nav.classList.toggle("active")
+});
 
 
 // ===== Change Color of navigation bar when triggered ==== //
@@ -17,19 +30,23 @@ window.addEventListener('scroll', function(){
 // Add active class to the current button (highlight it)
 var header = document.getElementById("header");
 var btns = header.getElementsByClassName("nav-item");
-for (var i = 0; i < btns.length; i++) {
+for (var i = 0; i < btns.length; i++) { //btn.length getting the range of the list item
+
   btns[i].addEventListener("click", function() {
+
   var current = document.getElementsByClassName("active-nav");
+
   current[0].className = current[0].className.replace(" active-nav", "");
+
   this.className += " active-nav";
   });
 }
 
 
-
-
 // ===== Scroll Reveal Animation ==== //
-const sr = ScrollReveal({
+
+//Top
+const srTop = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
@@ -37,18 +54,62 @@ const sr = ScrollReveal({
 
 });
 
-sr.reveal(`.intro-text, 
-        .intro-img, 
+srTop.reveal(`.intro-text, 
         .title,
-        .project-card,
         .about-title,
         .about-text,
-        .about-img,
         .contact-img,
-        .work-img,
         .contact-form`,{
     interval: 100
 })
+
+//Bottom
+const srBottom = ScrollReveal({
+    origin: 'bottom',
+    distance: '150px',
+    duration: 2000,
+    reset: false
+
+});
+
+srBottom.reveal(`.about-img,
+    .work-img,
+    .intro-img,
+    .bxl-instagram-alt,
+    .about-work-text`,{
+    interval: 100
+})
+
+//Left
+const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '80px',
+    duration: 2000,
+    reset: false
+
+});
+
+srLeft.reveal(`.bxl-facebook-circle,
+    .bxl-linkedin-square,
+    .bxl-github,
+    .right`,{
+    interval: 100
+})
+
+//Right
+const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '80px',
+    duration: 2000,
+    reset: false
+
+});
+
+srRight.reveal(`.bxs-envelope,
+.left`,{
+    interval: 100
+})
+
 
 
 // ===== Validating Email ==== //
@@ -97,7 +158,7 @@ function errorMessage(){
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Some field is Empty!',
+        text: 'Some field is empty.',
       })
 }
 
@@ -108,7 +169,5 @@ function invalidEmailMessage(){
         text: 'Email is Invalid!',
       })
 }
-
-
 
 
