@@ -60,14 +60,14 @@ srTop.reveal(`.intro-text,
         .about-text,
         .contact-img,
         .contact-form,
-       .bxl-instagram-alt,`,{
+        .bxl-instagram-alt`,{
     interval: 100
 })
 
 //Bottom
 const srBottom = ScrollReveal({
     origin: 'bottom',
-    distance: '150px',
+    distance: '70px',
     duration: 2000,
     reset: false
 
