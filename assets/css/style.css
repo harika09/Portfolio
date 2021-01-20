@@ -233,9 +233,16 @@ header.sticky li a:hover {
 
 .language .swiper .swiper-icon {
   width: 15px;
-  height: 15px;
+  height: 18px;
   box-shadow: none;
 }
+
+.language .api .api-icon {
+  width: 25px;
+  height: 18px;
+  box-shadow: none;
+}
+
 /* ==== Portfolio END ==== */
 
 /* ==== About Me ==== */
@@ -501,7 +508,7 @@ textarea {
 @media screen and (max-width: 900px) {
   /* ==== Header Navigation ==== */
   header {
-    padding: 20px 30px;
+    padding: 10px 30px;
   }
 
   header .nav-menu {
@@ -599,8 +606,12 @@ textarea {
     max-width: 640px;
     margin: auto;
   }
-  
+
   .language .swiper .swiper-icon {
+    display: inline;
+  }
+
+  .language .api .api-icon {
     display: inline;
   }
 
