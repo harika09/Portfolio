@@ -290,6 +290,10 @@ header.sticky li a:hover {
   color: #40abbf;
 }
 
+.fa-sass {
+  color: #cf649a;
+}
+
 .fa-bootstrap {
   color: #be4bdb;
 }
@@ -305,6 +309,7 @@ header.sticky li a:hover {
 .fa-swift {
   color: #f69d84;
 }
+
 
 .bxl-jquery {
   color: #0e3047;
