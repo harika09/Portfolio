@@ -523,7 +523,6 @@ textarea {
   max-width: 100%;
   height: auto;
 }
-
 .error-content h1 {
   margin-bottom: 20px;
 }
@@ -592,14 +591,14 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .skills-list {
-    display: block;
-    font-size: 1.3rem;
+  .about-text p,
+  .about-work p {
+    font-size: 0.9rem;
   }
 
-  .left-skills i {
+  .skills-list {
     display: block;
-    margin: auto;
+    font-size: 1rem;
   }
 
   .work-img {
@@ -646,10 +645,6 @@ textarea {
     display: inline;
   }
 
-  /* .clipboard{
-        position: relative;
-        left: 0;
-    } */
   /* ==== Porfolio END ==== */
 
   /* ==== Contact Me ==== */
@@ -712,6 +707,19 @@ textarea {
     font-size: 1rem;
   }
   /* ==== Banner END ==== */
+
+  .skills-list {
+    font-size: 0.9rem;
+  }
+
+  .skills-list i {
+    font-size: 1rem;
+  }
+
+  .mongo,
+  .api-icon {
+    width: 15px;
+  }
 
   /* ==== Project ==== */
 
