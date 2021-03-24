@@ -247,7 +247,7 @@ header.sticky li a:hover {
 
 /* ==== About Me ==== */
 .about-container {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .about-content {
@@ -280,6 +280,17 @@ header.sticky li a:hover {
 .skills-list i {
   font-size: 1.5rem;
   margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.skill-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mongo,
+.api-icon {
+  width: 25px;
 }
 
 .fa-html5 {
@@ -299,6 +310,7 @@ header.sticky li a:hover {
 }
 
 .fa-js-square {
+  margin-bottom: 8px;
   color: #f7df1c;
 }
 
@@ -317,9 +329,11 @@ header.sticky li a:hover {
 .bxl-jquery {
   color: #0e3047;
 }
-
+.about-work {
+  margin-top: 40px;
+}
 .resume {
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 10px 10px;
   text-align: center;
   background-color: #28abb9;
@@ -581,6 +595,11 @@ textarea {
   .skills-list {
     display: block;
     font-size: 1.3rem;
+  }
+
+  .left-skills i {
+    display: block;
+    margin: auto;
   }
 
   .work-img {

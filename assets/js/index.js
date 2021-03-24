@@ -76,7 +76,7 @@ const srBottom = ScrollReveal({
 srBottom.reveal(`.about-img,
     .work-img,
     .intro-img,
-    .about-work-text`,{
+    .about-work`,{
     interval: 100
 })
 
