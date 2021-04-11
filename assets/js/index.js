@@ -60,7 +60,7 @@ srTop.reveal(`.intro-text,
         .about-text,
         .contact-img,
         .contact-form,
-        .bxl-instagram-alt`,{
+        .instagram-icon`,{
     interval: 100
 })
 
@@ -89,9 +89,9 @@ const srLeft = ScrollReveal({
 
 });
 
-srLeft.reveal(`.bxl-facebook-circle,
-    .bxl-linkedin-square,
-    .bxl-github,
+srLeft.reveal(`.facebook-icon,
+    .linkedin-icon,
+    .github-icon,
     .right`,{
     interval: 100
 })
@@ -105,7 +105,7 @@ const srRight = ScrollReveal({
 
 });
 
-srRight.reveal(`.bxs-envelope,
+srRight.reveal(`.envelope-icon,
 .left`,{
     interval: 100
 })
