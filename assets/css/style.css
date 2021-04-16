@@ -288,47 +288,11 @@ header.sticky li a:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.mongo,
-.api-icon, .icon {
+.icon {
   width: 25px;
 }
 
-.fa-html5 {
-  color: #f37e16;
-}
 
-.fa-css3-alt {
-  color: #40abbf;
-}
-
-.fa-sass {
-  color: #cf649a;
-}
-
-.fa-bootstrap {
-  color: #be4bdb;
-}
-
-.fa-js-square {
-  margin-bottom: 8px;
-  color: #f7df1c;
-}
-
-.fa-node {
-  color: #78c513;
-}
-
-.fa-php {
-  color: #6f80b6;
-}
-
-.fa-swift {
-  color: #f69d84;
-}
-
-.bxl-jquery {
-  color: #0e3047;
-}
 .about-work {
   margin-top: 40px;
 }
