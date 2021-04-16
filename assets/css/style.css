@@ -289,7 +289,7 @@ header.sticky li a:hover {
 }
 
 .mongo,
-.api-icon {
+.api-icon, .icon {
   width: 25px;
 }
 
