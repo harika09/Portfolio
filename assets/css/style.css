@@ -259,11 +259,13 @@ header.sticky li a:hover {
   box-shadow: none;
 }
 
-.language .api .api-icon {
+.language div .icon{
   width: 25px;
   height: 18px;
   box-shadow: none;
 }
+
+
 
 /* ==== Portfolio END ==== */
 
