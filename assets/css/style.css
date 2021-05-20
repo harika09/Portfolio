@@ -247,6 +247,7 @@ header.sticky li a:hover {
 
 .language {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 5px;
   font-size: 0.8rem;
@@ -786,6 +787,8 @@ textarea {
     font-size: 3.5rem;
   }
   /* ==== Contact Me END ==== */
+
+  
 }
 
 @media screen and (min-width: 1204px) {
