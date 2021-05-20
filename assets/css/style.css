@@ -614,7 +614,7 @@ textarea {
   }
 
   .portfo-content .project-card img {
-    width: 540px;
+
     display: block;
     margin: auto;
   }
@@ -624,13 +624,10 @@ textarea {
     margin: auto;
   }
 
-  .language .swiper .swiper-icon {
+  .language .swiper .swiper-icon{
     display: inline;
   }
 
-  .language .api .api-icon {
-    display: inline;
-  }
 
   /* ==== Porfolio END ==== */
 
