@@ -89,7 +89,7 @@ header.sticky li a:hover {
 /* ==== Header Navigation END ==== */
 
 /* ==== Banner ==== */
-#toTopBtn{
+#toTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -105,7 +105,7 @@ header.sticky li a:hover {
   border-radius: 4px;
 }
 
-.toTop i{
+.toTop i {
   font-size: 2rem;
 }
 
@@ -259,13 +259,11 @@ header.sticky li a:hover {
   box-shadow: none;
 }
 
-.language div .icon{
+.language div .icon {
   width: 25px;
   height: 18px;
   box-shadow: none;
 }
-
-
 
 /* ==== Portfolio END ==== */
 
@@ -314,7 +312,6 @@ header.sticky li a:hover {
 .icon {
   width: 25px;
 }
-
 
 .about-work {
   margin-top: 40px;
@@ -528,15 +525,14 @@ textarea {
   }
 
   header .nav-menu.active {
-    width: 80%;
+    width: 100%;
     height: 400px;
     position: fixed;
-    top: 78px;
+    top: 75px;
     left: 0;
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 10%;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -623,7 +619,6 @@ textarea {
     margin: auto;
   }
 
-  
   /* ==== Porfolio END ==== */
 
   /* ==== Contact Me ==== */
@@ -781,8 +776,6 @@ textarea {
     font-size: 3.5rem;
   }
   /* ==== Contact Me END ==== */
-
-  
 }
 
 @media screen and (min-width: 1204px) {
