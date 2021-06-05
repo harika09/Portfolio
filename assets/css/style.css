@@ -132,7 +132,7 @@ header.sticky li a:hover {
 }
 
 .intro-img img {
-  width: 440px;
+  width: 500px;
   max-width: 100%;
   height: auto;
 }
@@ -572,6 +572,10 @@ textarea {
   .intro-text {
     text-align: center;
     margin-top: 40px;
+  }
+
+  .intro-img img {
+    width: 340px;
   }
 
   .banner-connect .linked-profile {
