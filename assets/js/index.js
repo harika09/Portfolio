@@ -77,7 +77,8 @@ const srTop = ScrollReveal({
 
 });
 
-srTop.reveal(`.intro-text, 
+srTop.reveal(`.intro-text,
+        .about-img, 
         .title,
         .about-title,
         .about-text,
@@ -96,7 +97,7 @@ const srBottom = ScrollReveal({
 
 });
 
-srBottom.reveal(`.about-img,
+srBottom.reveal(`
     .work-img,
     .intro-img,
     .about-work`,{
