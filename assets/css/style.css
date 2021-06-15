@@ -554,11 +554,13 @@ textarea {
     background: url(/assets/img/icon-hamburger.svg) no-repeat center;
     background-size: 30px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .menu-toggle.active {
     background: url(/assets/img/icon-close.svg) no-repeat center;
     background-size: 25px;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* ==== Header Navigation END ==== */
