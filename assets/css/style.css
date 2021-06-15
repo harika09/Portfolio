@@ -6,6 +6,10 @@
   --Jetbrains-400: 400;
 }
 
+.button:active.button:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
