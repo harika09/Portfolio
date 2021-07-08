@@ -705,6 +705,10 @@ textarea {
   header.sticky {
     padding: 0 20px;
   }
+
+  header .nav-menu.active {
+    top: 72px;
+  }
   /* ==== Banner ==== */
   .banner-content {
     padding: 0 10px;
