@@ -168,26 +168,28 @@ header.sticky li a:hover {
 /* ==== Banner END ==== */
 
 /* ==== Portfolio ==== */
+
 .title {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .portfo-content {
+  margin: 40px 0;
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 
-.project-content .project-card {
+.project-card {
   justify-self: center;
-}
-.portfo-content .project-card img {
-  width: 540px;
   max-width: 100%;
-  height: auto;
+}
+.project-card img {
+  width: 100%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -212,7 +214,6 @@ header.sticky li a:hover {
   font-size: 1rem;
   padding: 20px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  max-width: 540px;
   bottom: 6px;
 }
 
@@ -268,6 +269,86 @@ header.sticky li a:hover {
   box-shadow: none;
 }
 
+.view-more a {
+  padding: 10px 25px;
+  background-color: #ff6363;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.view-more a:hover {
+  opacity: 0.7;
+}
+
+/* ==== Project List ==== */
+
+.back-to-home a i {
+  font-size: 1.5rem;
+  color: #28abb9;
+}
+
+.back-to-home a {
+  font-size: 0.9rem;
+}
+
+.project-list-container {
+  padding-top: 120px;
+}
+
+.project-list-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.projects .project-list-card {
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projects .project-list-card .project-list-info {
+  padding: 10px;
+}
+
+.projects .project-list-card .project-list-info p {
+  font-size: 0.8rem;
+}
+
+.project-list-card img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.projects .project-list-card .projects-button {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.projects .project-list-card .projects-button a {
+  display: block;
+  padding: 2px;
+  width: 100%;
+  background-color: #28abb9;
+  box-shadow: 0 5px #4e8d7c;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.projects .project-list-card .projects-button a:hover {
+  background-color: #ff6363;
+  box-shadow: 0 5px#b24545;
+}
 /* ==== Portfolio END ==== */
 
 /* ==== About Me ==== */
@@ -655,6 +736,9 @@ textarea {
     margin: auto;
   }
 
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* ==== Porfolio END ==== */
 
   /* ==== Contact Me ==== */
@@ -780,14 +864,9 @@ textarea {
     font-size: 0.8rem;
   }
 
-  /* .project-card .details-info{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .project-card .details-info div{
-        margin-right: 1px;
-    } */
+  .projects {
+    grid-template-columns: 1fr;
+  }
   /* ==== Project END ==== */
 
   /* ==== Footer ==== */
