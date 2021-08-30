@@ -321,7 +321,7 @@ header.sticky li a:hover {
   font-size: 0.8rem;
 }
 
-.project-list-card img {
+.project-list-card a img {
   width: 100%;
   cursor: pointer;
 }
