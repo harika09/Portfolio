@@ -329,12 +329,12 @@ header.sticky li a:hover {
 .projects .project-list-card .projects-button {
   display: flex;
   gap: 10px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .projects .project-list-card .projects-button a {
   display: block;
-  padding: 2px;
+  padding: 6px;
   width: 100%;
   background-color: #28abb9;
   box-shadow: 0 5px #4e8d7c;
