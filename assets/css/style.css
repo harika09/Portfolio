@@ -401,6 +401,9 @@ header.sticky li a:hover {
   margin-top: 40px;
 }
 .resume {
+  width: 100%;
+  border: none;
+  outline: none;
   margin-top: 80px;
   padding: 10px 10px;
   text-align: center;
@@ -408,10 +411,8 @@ header.sticky li a:hover {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 5px #4e8d7c;
-}
-
-.resume a {
   color: #fff;
+  font-size: 1rem;
 }
 
 .resume i {
