@@ -143,6 +143,7 @@ srRight.reveal(
 );
 
 // ===== Validating Email ==== //
+
 function sendMail() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
