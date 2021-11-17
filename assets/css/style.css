@@ -230,6 +230,7 @@ header.sticky li a:hover {
   gap: 10px;
   left: 0;
   right: 0;
+  width: 100%;
 }
 
 .project-info .project-links a {
@@ -251,6 +252,8 @@ header.sticky li a:hover {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
 }
 
 .language .swiper .swiper-icon {
@@ -793,20 +796,22 @@ textarea {
   }
 
   .project-info .project-links {
+    width: 220px;
     padding: 0;
+    width: 100%;
   }
 
   .project-info .project-links a {
+    padding: 5px 2px;
     font-size: 3vw;
   }
 
   .language {
     gap: 5px;
-    text-align: center;
+    margin-bottom: 10px;
   }
 
   .language div .icon {
-    width: 15vw;
     height: 15px;
   }
 }
