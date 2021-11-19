@@ -268,6 +268,24 @@ header.sticky li a:hover {
   box-shadow: none;
 }
 
+.view-more {
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+  background-color: #ff6363;
+  padding: 8px;
+  max-width: 150px;
+}
+
+.view-more a {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.back-to-home {
+  margin-top: 120px;
+}
 /* ==== Portfolio END ==== */
 
 /* ==== About Me ==== */
