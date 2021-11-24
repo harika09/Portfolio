@@ -566,8 +566,7 @@ textarea {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    box-shadow: 2px 2px 1px #cccc;
-    transition: 0.5s;
+    box-shadow: 0 1px 0 0 #cccc;
   }
 
   header .nav-menu li {
