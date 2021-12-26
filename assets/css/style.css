@@ -35,6 +35,7 @@ a {
 
 h2 {
   text-align: center;
+  margin-bottom: 40px;
 }
 /* ==== Layout ==== */
 .bd-container {
@@ -346,12 +347,15 @@ header.sticky li a:hover {
 .about-work {
   margin-top: 40px;
 }
+
+
 .resume {
+  display: block;
   width: 100%;
   border: none;
   outline: none;
-  margin-top: 80px;
-  padding: 10px 10px;
+  margin-top: 20px;
+  padding: 5px 10px;
   text-align: center;
   background-color: #ff6363;
   border-radius: 2px;
