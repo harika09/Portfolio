@@ -95,6 +95,11 @@ header.sticky li a:hover {
   color: #28abb9;
 }
 
+.dark-mode{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 /* ==== Header Navigation END ==== */
 
 /* ==== Banner ==== */
@@ -123,6 +128,7 @@ header.sticky li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .intro-text h3 {
@@ -132,7 +138,7 @@ header.sticky li a:hover {
 }
 
 .intro-text h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 .intro-text span {
@@ -588,7 +594,7 @@ textarea {
   .menu-toggle .bar3 {
     width: 35px;
     height: 3px;
-    background-color: #000;
+    background-color: #072227;
     margin: 6px 0;
     transition: 0.4s;
     cursor: pointer;
@@ -614,6 +620,7 @@ textarea {
   .banner-content {
     flex-direction: column-reverse;
     justify-content: center;
+    
   }
 
   .intro-text {

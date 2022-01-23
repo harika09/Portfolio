@@ -78,7 +78,8 @@ srTop.reveal(
         .about-text,
         .contact-img,
         .contact-form,
-        .instagram-icon`,
+        .instagram-icon,
+        .view-more`,
   {
     interval: 100,
   }
