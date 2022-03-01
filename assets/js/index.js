@@ -192,3 +192,5 @@ function invalidEmailMessage() {
     text: "Email is Invalid!",
   });
 }
+
+
